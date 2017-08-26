@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": [
+          "last 2 versions",
+          "safari >= 7",
+          "ie >= 9",
+          "ios >= 6"
+        ]
+      }
+    }]
+  ],
+  "plugins": ["syntax-dynamic-import"]
+}
