@@ -1,11 +1,12 @@
 # webpack-starter
-Starter webpack project, including support for the most used frontend dependencies. See README.
-# Project under active development ! Be careful as it might change often during its development.
+Starter webpack project, including support for the most common used frontend dependencies. See below.
+This project is under active development. Be careful as it might change often during this period.
 
 ## What's included ?
 * Support for ES2015
 * Support Sass/Scss
 * Production minifications for css and js files
+* Live reload server
 
 ## Installation
 With npm :
@@ -18,15 +19,23 @@ yarn install
 ```
 
 ## Starting environments
-Development :
+###Development server with live reload :
 ```
-npm run dev
+npm run start
 ```
 or
 ```
-yarn dev
+yarn start
 ```
-Production build :
+###Development build :
+```
+npm run watch
+```
+or
+```
+yarn watch
+```
+###Production build :
 ```
 npm run build
 ```
@@ -34,3 +43,8 @@ or
 ```
 yarn build
 ```
+
+##Specifications
+All scripts must remain in the `assets` folder, including `css/app.scss`, `js/app.js` and `index.html` file and folders.
+
+`yarn start` or `npm run start` commands will automatically launch a local server on port 8080, then any modification to files included in `assets` will be compiled to the dist folder.
