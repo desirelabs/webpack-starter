@@ -19,7 +19,7 @@ yarn install
 ```
 
 ## Starting environments
-###Development server with live reload :
+### Development server with live reload :
 ```
 npm run start
 ```
@@ -27,7 +27,7 @@ or
 ```
 yarn start
 ```
-###Development build :
+### Development build :
 ```
 npm run watch
 ```
@@ -35,7 +35,7 @@ or
 ```
 yarn watch
 ```
-###Production build :
+### Production build :
 ```
 npm run build
 ```
@@ -44,7 +44,7 @@ or
 yarn build
 ```
 
-##Specifications
+## Specifications
 All scripts must remain in the `assets` folder, including `css/app.scss`, `js/app.js` and `index.html` file and folders.
 
 `yarn start` or `npm run start` commands will automatically launch a local server on port 8080, then any modification to files included in `assets` will be compiled to the dist folder.
