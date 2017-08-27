@@ -36,7 +36,15 @@ let config = {
   watch: dev,
   devtool: dev ? "cheap-module-eval-source-map" : false,
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    compress: true,
+    port: 9000,
+    open: false,
+    overlay: {
+      warnings: true,
+      errors: true
+    },
+    quiet: true
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -64,6 +72,24 @@ let config = {
           fallback: "style-loader",
           use: [...cssLoaders, 'sass-loader']
         })
+      },
+      {
+        test: /\.(png|jpg|jp?g|gif|svg|eot|ttf|otf|wav)(\?.*)?$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+              name: '[name].[hash:7].[ext]'
+            }
+          },
+          {
+            loader: "img-loader",
+            options: {
+              enabled: !dev
+            }
+          }
+        ]
       }
     ]
   },
