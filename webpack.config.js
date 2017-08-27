@@ -29,14 +29,14 @@ if (!dev) {
 let config = {
   entry: {
     app: [
-      './assets/css/app.scss',
-      './assets/js/app.js'
+      './src/css/app.scss',
+      './src/js/app.js'
     ]
   },
   watch: dev,
   devtool: dev ? "cheap-module-eval-source-map" : false,
   devServer: {
-    contentBase: './dist',
+    contentBase: './src',
     compress: true,
     port: 9000,
     open: false,
@@ -47,7 +47,7 @@ let config = {
     quiet: true
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'src'),
     filename: dev ? '[name].js' : '[name].[chunkhash].js'
   },
   module: {
@@ -100,7 +100,7 @@ let config = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      template: 'assets/index.html',
+      template: 'src/index.html',
       favicon: false,
       showErrors: dev
     })
@@ -112,7 +112,7 @@ if (!dev) {
     sourceMap: false
   }))
   config.plugins.push(new ManifestPlugin())
-  config.plugins.push(new CleanWebpackPlugin(['dist'], {
+  config.plugins.push(new CleanWebpackPlugin(['src'], {
     root: path.resolve(__dirname, ''),
     verbose: true,
     dry: false
