@@ -3,6 +3,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const ManifestPlugin = require('webpack-manifest-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const dev = process.env.NODE_ENV === 'dev'
 
 let cssLoaders = [
@@ -35,28 +36,22 @@ let config = {
   watch: dev,
   devtool: dev ? "cheap-module-eval-source-map" : false,
   devServer: {
-    contentBase: './assets',
+    contentBase: './dist',
     compress: true,
     port: 9000,
-    open: false,
+    open: true,
     overlay: {
       warnings: true,
       errors: true
     },
-    quiet: true
+    quiet: false
   },
   output: {
-    path: path.resolve(__dirname, 'web/dist'),
-    filename: '[name].js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: dev ? '[name].js' : '[name].js'
   },
   module: {
     rules: [
-      {
-        enforce: "pre",
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: ['eslint-loader']
-      },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
@@ -100,8 +95,14 @@ let config = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: '[name].css',
-      disable: false
+      filename: dev ? '[name].css' : '[name].css',
+      disable: dev
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: 'assets/index.html',
+      favicon: false,
+      showErrors: dev
     })
   ]
 }
@@ -111,7 +112,7 @@ if (!dev) {
     sourceMap: false
   }))
   config.plugins.push(new ManifestPlugin())
-  config.plugins.push(new CleanWebpackPlugin(['assets'], {
+  config.plugins.push(new CleanWebpackPlugin(['dist'], {
     root: path.resolve(__dirname, ''),
     verbose: true,
     dry: false
