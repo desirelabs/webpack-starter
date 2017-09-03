@@ -40,11 +40,11 @@ let config = {
     compress: true,
     port: 9000,
     open: true,
+    hot: true,
     overlay: {
       warnings: true,
       errors: true
-    },
-    quiet: false
+    }
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
