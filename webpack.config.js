@@ -40,7 +40,6 @@ let config = {
     compress: true,
     port: 9000,
     open: true,
-    hot: true,
     overlay: {
       warnings: true,
       errors: true
