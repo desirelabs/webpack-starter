@@ -1,9 +1,11 @@
-import axios from 'axios'
-import _ from 'lodash'
-import test from 'toto'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './react/App'
 
-axios.get('http://localhost:8080/assets/data.json').then(response => {
-  _.each(response.data, value => console.log(value))
-})
-
-
+let root = document.querySelector('#root')
+if (root) {
+  ReactDOM.render(
+    <App />,
+    root
+  )
+}
