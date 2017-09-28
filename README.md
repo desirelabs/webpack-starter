@@ -12,6 +12,11 @@ This project is under active development. Be careful as it might change often du
 * FlowType checking
 
 ## Installation
+With npm :
+```
+npm install
+```
+or with yarn :
 ```
 yarn install
 ```
@@ -19,13 +24,25 @@ yarn install
 ## Starting environments
 ### Development server with live reload :
 ```
+npm run start
+```
+or
+```
 yarn start
 ```
 ### Development build :
 ```
+npm run watch
+```
+or
+```
 yarn watch
 ```
 ### Production build :
+```
+npm run build
+```
+or
 ```
 yarn build
 ```
