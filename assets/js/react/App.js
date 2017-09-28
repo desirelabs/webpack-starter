@@ -1,18 +1,9 @@
-// @flow
-import React from 'react'
+import * as React from 'react'
 
-type Props = {
-  name: string
-}
-
-type State = {
-  name: string
-}
-
-class App extends React.Component<Props, State> {
+class App extends React.Component {
   render () {
     return (
-      <h1>Hello {this.props.name}, {this.state.name}!</h1>
+      <h1>Hello !</h1>
     )
   }
 }
