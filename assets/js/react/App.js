@@ -1,16 +1,20 @@
+// @flow
 import React from 'react'
-import PropTypes from 'prop-types'
 
-class App extends React.Component {
-  render () {
-    return (
-      <h1>Hello {this.props.name}!</h1>
-    )
-  }
+type Props = {
+  name: string
 }
 
-App.propTypes = {
-  name: PropTypes.string
+type State = {
+  name: string
+}
+
+class App extends React.Component<Props, State> {
+  render () {
+    return (
+      <h1>Hello {this.props.name}, {this.state.name}!</h1>
+    )
+  }
 }
 
 export default App

@@ -1,3 +1,14 @@
 {
-  "extends": ["standard", "standard-react"]
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:flowtype/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "react/prop-types": 0
+  }
 }
