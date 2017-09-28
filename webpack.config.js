@@ -36,10 +36,11 @@ let config = {
   watch: dev,
   devtool: dev ? "cheap-module-eval-source-map" : false,
   devServer: {
-    contentBase: './dist',
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
     open: true,
+    hot: true,
     overlay: {
       warnings: true,
       errors: true
