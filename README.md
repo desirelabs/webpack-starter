@@ -9,6 +9,7 @@ This project is under active development. Be careful as it might change often du
 * Support Sass/Scss
 * Production minifications for css and js files
 * Live reload server
+* FlowType checking
 
 ## Installation
 ```
