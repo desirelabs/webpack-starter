@@ -1,16 +1,18 @@
 const path = require('path')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const dev = process.env.NODE_ENV === 'dev'
 
 let cssLoaders = [
-  {loader: 'css-loader', options: {
-    importLoaders: 1,
-    minimize: !dev
-  }}
+  {loader: 'css-loader',
+    options: {
+      importLoaders: 1,
+      minimize: !dev
+    }
+  }
 ]
 
 if (!dev) {
@@ -19,7 +21,7 @@ if (!dev) {
     options: {
       plugins: (loader) => [
         require('autoprefixer')({
-          "browsers": ["last 2 versions", "safari >= 7", "ie >= 9", "ios >= 6"]
+          'browsers': ['last 2 versions', 'safari >= 7', 'ie >= 9', 'ios >= 6']
         })
       ]
     }
@@ -34,13 +36,13 @@ let config = {
     ]
   },
   watch: dev,
-  devtool: dev ? "cheap-module-eval-source-map" : false,
+  devtool: dev ? 'cheap-module-eval-source-map' : false,
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
     open: true,
-    hot: true,
+    hot: false,
     overlay: {
       warnings: true,
       errors: true
@@ -61,7 +63,7 @@ let config = {
         test: /\.css$/,
         exclude: /(node_modules|bower_components)/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
+          fallback: 'style-loader',
           use: cssLoaders
         })
       },
@@ -69,7 +71,7 @@ let config = {
         test: /\.scss$/,
         exclude: /(node_modules|bower_components)/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
+          fallback: 'style-loader',
           use: [...cssLoaders, 'sass-loader']
         })
       },
@@ -77,14 +79,14 @@ let config = {
         test: /\.(png|jpg|jp?g|gif|svg|eot|ttf|otf|wav)(\?.*)?$/,
         use: [
           {
-            loader: "url-loader",
+            loader: 'url-loader',
             options: {
               limit: 8192,
               name: '[name].[hash:7].[ext]'
             }
           },
           {
-            loader: "img-loader",
+            loader: 'img-loader',
             options: {
               enabled: !dev
             }
