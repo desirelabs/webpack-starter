@@ -52,10 +52,13 @@ let config = {
     path: path.resolve(__dirname, 'dist'),
     filename: dev ? '[name].js' : '[name].js'
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         use: ['babel-loader', 'eslint-loader']
       },
