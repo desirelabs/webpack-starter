@@ -4,7 +4,8 @@ class App extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      name: ''
+      name: '',
+      people: {}
     }
 
     this.setData = this.setData.bind(this)

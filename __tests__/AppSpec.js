@@ -44,8 +44,14 @@ describe('App', () => {
   })
 
   it('Expects title tag content to contain `React`', () => {
-    const wrapper = mount(<App />)
+    const wrapper = shallow(<App />)
     const title = wrapper.find('h1')
     expect(title.text().indexOf('React')).toBeGreaterThan(-1)
+  })
+
+  it('Should update state', () => {
+    const wrapper = mount(<App />)
+    wrapper.instance().setData()
+    expect(wrapper.state('name')).toEqual('React')
   })
 })
