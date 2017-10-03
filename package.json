@@ -17,12 +17,15 @@
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.5",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-15": "^1.0.1",
     "eslint": "^4.5.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-react": "^5.0.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-flowtype": "^2.36.0",
     "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.2.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.3.0",
@@ -47,7 +50,8 @@
     "watch": "NODE_ENV=dev webpack --progress --watch",
     "start": "NODE_ENV=dev webpack-dev-server",
     "build": "webpack",
-    "test": "jest"
+    "test": "jest --watch",
+    "testup": "jest --updateSnapshot"
   },
   "jest": {
     "verbose": true
