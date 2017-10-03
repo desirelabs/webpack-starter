@@ -51,7 +51,7 @@ yarn build
 ## Specifications
 All scripts must remain in the `assets` folder, including `css/app.scss`, `js/app.js` and `index.html` file and folders.
 
-`yarn start` or `npm run start` commands will automatically launch a local server on port 8080, then any modification to files included in `assets` will be compiled to the dist folder.
+`yarn start` or `npm run start` commands will automatically launch a local server on port 9000, then any modification to files included in `assets` will be compiled to the dist folder.
 
 ## Other builds
 ### React
