@@ -10,6 +10,7 @@ This project is under active development. Be careful as it might change often du
 * Production minifications for css and js files
 * Live reload server
 * FlowType checking
+* Jest & Enzyme testing
 
 ## Installation
 With npm :
