@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1507218102292" clover="3.2.0">
+  <project timestamp="1507218102292" name="All files">
+    <metrics statements="22" coveredstatements="17" conditionals="2" coveredconditionals="0" methods="16" coveredmethods="12" elements="40" coveredelements="29" complexity="0" loc="22" ncloc="22" packages="1" files="3" classes="3">
+      <file name="App.js" path="/Users/franck/workspace/lab/react-sandbox/assets/js/react/App.js">
+        <metrics statements="13" coveredstatements="8" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="5"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="47" count="8" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+      </file>
+      <file name="Button.js" path="/Users/franck/workspace/lab/react-sandbox/assets/js/react/Button.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+        <line num="5" count="11" type="stmt"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="10" count="11" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="30" count="15" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+      <file name="Tick.js" path="/Users/franck/workspace/lab/react-sandbox/assets/js/react/Tick.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>

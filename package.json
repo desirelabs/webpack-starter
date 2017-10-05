@@ -50,8 +50,7 @@
     "watch": "NODE_ENV=dev webpack --progress --watch",
     "start": "NODE_ENV=dev webpack-dev-server",
     "build": "webpack",
-    "test": "jest --watch",
-    "testup": "jest --updateSnapshot"
+    "test": "jest --watch --coverage --expand"
   },
   "jest": {
     "verbose": true,
