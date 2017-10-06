@@ -35,9 +35,3 @@ describe('Button', () => {
     expect(wrapper.prop('text').length).toBeGreaterThan(0)
   })
 })
-
-describe('Tests à la con', () => {
-  test('object length', () => {
-    expect(2 > 1).toBe(true)
-  })
-})
