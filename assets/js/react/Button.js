@@ -1,17 +1,24 @@
+// @flow
 import React from 'react'
 
-class Buttons extends React.Component {
+type Props = {
+  text: string
+}
+
+type State = {
+  text: string
+}
+
+class Buttons extends React.Component<Props, State> {
   constructor () {
     super()
     this.state = {
       text: ''
     }
-
-    this.setData = this.setData.bind(this)
   }
 
   componentWillMount () {
-    // this.setData()
+    this.setData.bind(this)
   }
 
   setData () {

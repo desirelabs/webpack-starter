@@ -1,29 +1,37 @@
+// @flow
 import React from 'react'
 
 import Button from './Button'
 import Tick from './Tick'
 
-class App extends React.Component {
-  constructor (props) {
-    super(props)
+type Props = {}
+
+type State = {
+  name: string,
+  people: Object,
+  count: number
+}
+
+class App extends React.Component<Props, State> {
+  constructor () {
+    super()
     this.state = {
       name: '',
       people: {},
       count: 0
     }
-
-    this.setData = this.setData.bind(this)
   }
 
-  isOdd (value) {
+  isOdd (value: number) {
     return value % 2 === 0
   }
 
   componentWillMount () {
-    this.setData()
+    this.setData.bind(this)('test')
   }
 
-  setData () {
+  setData (str: string) {
+    console.log(str)
     this.setState({
       name: 'React'
     })
@@ -45,7 +53,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <div>
+      <div style={style}>
         <h1>Hello {this.state.name}!</h1>
         <Tick count={this.state.count} />
         <Button text={'Ajouter'} actionClick={() => this.add()} />
@@ -54,7 +62,7 @@ class App extends React.Component {
     )
   }
 }
-// eslint-disable-next-line
+
 const style = {
   display: 'flex',
   flexFlow: 'column nowrap',

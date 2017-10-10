@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const FlowBabelWebpackPlugin = require('flow-babel-webpack-plugin')
 const dev = process.env.NODE_ENV === 'dev'
 
 let cssLoaders = [
@@ -106,8 +107,13 @@ let config = {
     new HtmlWebpackPlugin({
       inject: true,
       template: 'assets/index.html',
-      favicon: false,
+      favicon: 'assets/favicon.ico',
       showErrors: dev
+    }),
+    new FlowBabelWebpackPlugin({
+      formatter: (errorCode, errorDetails) => {
+        return 'A Flow error was detected: ' + errorCode + '\n\n' + errorDetails
+      }
     })
   ]
 }

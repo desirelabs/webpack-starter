@@ -1,6 +1,11 @@
+// @flow
 import React from 'react'
 
-const Tick = ({count}) => (
+type Props = {
+  count: number
+}
+
+const Tick = ({count}: Props) => (
   <div>
     Ticks : {count}
   </div>
