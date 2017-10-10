@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1507218102292" clover="3.2.0">
-  <project timestamp="1507218102292" name="All files">
+<coverage generated="1507617395477" clover="3.2.0">
+  <project timestamp="1507617395477" name="All files">
     <metrics statements="22" coveredstatements="17" conditionals="2" coveredconditionals="0" methods="16" coveredmethods="12" elements="40" coveredelements="29" complexity="0" loc="22" ncloc="22" packages="1" files="3" classes="3">
       <file name="App.js" path="/Users/franck/workspace/lab/react-sandbox/assets/js/react/App.js">
         <metrics statements="13" coveredstatements="8" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="5"/>

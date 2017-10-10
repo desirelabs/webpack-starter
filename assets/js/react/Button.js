@@ -14,7 +14,7 @@ class Buttons extends React.Component {
     // this.setData()
   }
 
-  async setData () {
+  setData () {
     this.setState({
       text: this.props.text
     })
