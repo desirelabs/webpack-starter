@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { configure, shallow, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-15'
-import Button from '../../assets/js/react/Button'
+import Button from './Button'
 
 configure({adapter: new Adapter()})
 

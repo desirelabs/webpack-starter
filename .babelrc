@@ -21,6 +21,7 @@
   },
   "plugins": [
     "syntax-dynamic-import",
-    "transform-flow-comments"
+    "transform-flow-comments",
+    "transform-class-properties"
   ]
 }

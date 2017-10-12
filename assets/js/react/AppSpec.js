@@ -1,6 +1,6 @@
 
 import React from 'react'
-import App from '../../assets/js/react/App'
+import App from './App'
 import renderer from 'react-test-renderer'
 import Adapter from 'enzyme-adapter-react-15'
 import { configure, mount, shallow } from 'enzyme'

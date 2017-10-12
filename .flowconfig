@@ -1,9 +1,15 @@
 [ignore]
+.*/node_modules/.*
+.*/__mocks__/.*
+.*/dist/.*
+.*/coverage/.*
 
 [include]
 
 [libs]
+/flow-typed
 
 [options]
+all=false
 
 [lints]

@@ -1,10 +1,7 @@
 // @flow
 import React from 'react'
 
-type Props = {
-  text: string
-}
-
+type Props = {}
 type State = {
   text: string
 }
@@ -21,10 +18,8 @@ class Buttons extends React.Component<Props, State> {
     this.setData.bind(this)
   }
 
-  setData () {
-    this.setState({
-      text: this.props.text
-    })
+  setData = () => {
+    /* set the state */
   }
 
   actionClick () {
