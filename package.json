@@ -3,6 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "watch": "NODE_ENV=dev webpack --progress --watch",
+    "start": "NODE_ENV=dev webpack-dev-server",
+    "build": "webpack",
+    "test": "jest --watch --coverage --expand"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "__snapshots__"
+    ],
+    "testRegex": "(assets/js/.*)(spec|test).(js|jsx)"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-cli": "^6.26.0",
@@ -45,19 +63,6 @@
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1",
     "webpack-manifest-plugin": "^1.3.1"
-  },
-  "scripts": {
-    "watch": "NODE_ENV=dev webpack --progress --watch",
-    "start": "NODE_ENV=dev webpack-dev-server",
-    "build": "webpack",
-    "test": "jest --watch --coverage --expand"
-  },
-  "jest": {
-    "verbose": true,
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
-    }
   },
   "dependencies": {
     "axios": "^0.16.2",
