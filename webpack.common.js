@@ -29,25 +29,12 @@ if (!dev) {
   })
 }
 
-let config = {
+module.exports = {
   entry: {
     app: [
       './assets/css/app.scss',
       './assets/js/app.js'
     ]
-  },
-  watch: dev,
-  devtool: dev ? 'cheap-module-eval-source-map' : false,
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000,
-    open: false,
-    hot: false,
-    overlay: {
-      warnings: true,
-      errors: true
-    }
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -62,40 +49,6 @@ let config = {
         test: /.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         use: ['babel-loader', 'eslint-loader']
-      },
-      {
-        test: /\.css$/,
-        exclude: /(node_modules|bower_components)/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: cssLoaders
-        })
-      },
-      {
-        test: /\.scss$/,
-        exclude: /(node_modules|bower_components)/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [...cssLoaders, 'sass-loader']
-        })
-      },
-      {
-        test: /\.(png|jpg|jp?g|gif|svg|eot|ttf|otf|wav)(\?.*)?$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-              name: '[name].[hash:7].[ext]'
-            }
-          },
-          {
-            loader: 'img-loader',
-            options: {
-              enabled: !dev
-            }
-          }
-        ]
       }
     ]
   },
@@ -117,17 +70,3 @@ let config = {
     })
   ]
 }
-
-if (!dev) {
-  config.plugins.push(new UglifyJSPlugin({
-    sourceMap: false
-  }))
-  config.plugins.push(new ManifestPlugin())
-  config.plugins.push(new CleanWebpackPlugin(['dist'], {
-    root: path.resolve(__dirname, ''),
-    verbose: true,
-    dry: false
-  }))
-}
-
-module.exports = config
