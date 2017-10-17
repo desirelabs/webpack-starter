@@ -24,7 +24,7 @@ class Buttons extends React.Component<Props, State> {
 
   actionClick () {
     this.setState({
-      text: 'coucou'
+      text: 'hello'
     })
   }
 
