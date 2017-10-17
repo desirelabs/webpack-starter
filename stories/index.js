@@ -6,7 +6,7 @@ import { linkTo } from '@storybook/addon-links'
 
 import { Button, Welcome } from '@storybook/react/demo'
 
-import Notifications from '../assets/js/react/NotificationsComponents/NotificationsComponent'
+import Notifications from '../assets/js/react/components/NotificationsComponents/NotificationsComponent'
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />)
 

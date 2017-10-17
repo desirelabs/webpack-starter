@@ -1,0 +1,626 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NotificationsComponent getNotifications should be called 1`] = `
+ShallowWrapper {
+  "getNotifications": [Function],
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NotificationsComponent />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "class",
+    "props": Object {
+      "bsClass": "btn-toolbar",
+      "children": Array [
+        <Uncontrolled(Dropdown)
+          id="dropdown-custom-1"
+        >
+          <DropdownToggle
+            bsClass="dropdown-toggle"
+            bsRole="toggle"
+            noCaret={true}
+            open={false}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "border": "none",
+                "boxShadow": "none",
+                "marginRight": "-15px",
+              }
+            }
+            useAnchor={false}
+          >
+            <img
+              alt="Notifications"
+              height="40"
+              src="test-file-stub"
+              width="40"
+            />
+          </DropdownToggle>
+          <DropdownMenu
+            bsClass="dropdown-menu"
+            bsRole="menu"
+            className="dropdown-menu animated bounceInDown"
+            pullRight={false}
+            style={
+              Object {
+                "borderRadius": "5px",
+                "overflow": "hidden",
+              }
+            }
+          >
+            <div>
+              <NotificationsHeader
+                count={0}
+              />
+              <NotificationsList
+                notifications={Array []}
+                onDelete={[Function]}
+                onDismiss={[Function]}
+                onNotifClick={[Function]}
+              />
+              <NotificationsFooter
+                onDeleteAll={[Function]}
+                onDismissAll={[Function]}
+              />
+            </div>
+          </DropdownMenu>
+        </Uncontrolled(Dropdown)>,
+        <ModalComponent
+          bodyMessage=""
+          headerMessage=""
+          onCancel={[Function]}
+          onConfirm={[Function]}
+          showModal={false}
+        />,
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "display": "flex",
+        "minHeight": "90px",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <DropdownToggle
+              bsClass="dropdown-toggle"
+              bsRole="toggle"
+              noCaret={true}
+              open={false}
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "border": "none",
+                  "boxShadow": "none",
+                  "marginRight": "-15px",
+                }
+              }
+              useAnchor={false}
+            >
+              <img
+                alt="Notifications"
+                height="40"
+                src="test-file-stub"
+                width="40"
+              />
+            </DropdownToggle>,
+            <DropdownMenu
+              bsClass="dropdown-menu"
+              bsRole="menu"
+              className="dropdown-menu animated bounceInDown"
+              pullRight={false}
+              style={
+                Object {
+                  "borderRadius": "5px",
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <div>
+                <NotificationsHeader
+                  count={0}
+                />
+                <NotificationsList
+                  notifications={Array []}
+                  onDelete={[Function]}
+                  onDismiss={[Function]}
+                  onNotifClick={[Function]}
+                />
+                <NotificationsFooter
+                  onDeleteAll={[Function]}
+                  onDismissAll={[Function]}
+                />
+              </div>
+            </DropdownMenu>,
+          ],
+          "id": "dropdown-custom-1",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "bsClass": "dropdown-toggle",
+              "bsRole": "toggle",
+              "children": Array [
+                <img
+                  alt="Notifications"
+                  height="40"
+                  src="test-file-stub"
+                  width="40"
+                />,
+                false,
+              ],
+              "noCaret": true,
+              "open": false,
+              "style": Object {
+                "backgroundColor": "transparent",
+                "border": "none",
+                "boxShadow": "none",
+                "marginRight": "-15px",
+              },
+              "useAnchor": false,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Notifications",
+                  "height": "40",
+                  "src": "test-file-stub",
+                  "width": "40",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              false,
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "bsClass": "dropdown-menu",
+              "bsRole": "menu",
+              "children": <div>
+                <NotificationsHeader
+                  count={0}
+                />
+                <NotificationsList
+                  notifications={Array []}
+                  onDelete={[Function]}
+                  onDismiss={[Function]}
+                  onNotifClick={[Function]}
+                />
+                <NotificationsFooter
+                  onDeleteAll={[Function]}
+                  onDismissAll={[Function]}
+                />
+              </div>,
+              "className": "dropdown-menu animated bounceInDown",
+              "pullRight": false,
+              "style": Object {
+                "borderRadius": "5px",
+                "overflow": "hidden",
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <NotificationsHeader
+                    count={0}
+                  />,
+                  <NotificationsList
+                    notifications={Array []}
+                    onDelete={[Function]}
+                    onDismiss={[Function]}
+                    onNotifClick={[Function]}
+                  />,
+                  <NotificationsFooter
+                    onDeleteAll={[Function]}
+                    onDismissAll={[Function]}
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "count": 0,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "notifications": Array [],
+                    "onDelete": [Function],
+                    "onDismiss": [Function],
+                    "onNotifClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "onDeleteAll": [Function],
+                    "onDismissAll": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "function",
+        "props": Object {
+          "bodyMessage": "",
+          "headerMessage": "",
+          "onCancel": [Function],
+          "onConfirm": [Function],
+          "showModal": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "class",
+      "props": Object {
+        "bsClass": "btn-toolbar",
+        "children": Array [
+          <Uncontrolled(Dropdown)
+            id="dropdown-custom-1"
+          >
+            <DropdownToggle
+              bsClass="dropdown-toggle"
+              bsRole="toggle"
+              noCaret={true}
+              open={false}
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "border": "none",
+                  "boxShadow": "none",
+                  "marginRight": "-15px",
+                }
+              }
+              useAnchor={false}
+            >
+              <img
+                alt="Notifications"
+                height="40"
+                src="test-file-stub"
+                width="40"
+              />
+            </DropdownToggle>
+            <DropdownMenu
+              bsClass="dropdown-menu"
+              bsRole="menu"
+              className="dropdown-menu animated bounceInDown"
+              pullRight={false}
+              style={
+                Object {
+                  "borderRadius": "5px",
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <div>
+                <NotificationsHeader
+                  count={0}
+                />
+                <NotificationsList
+                  notifications={Array []}
+                  onDelete={[Function]}
+                  onDismiss={[Function]}
+                  onNotifClick={[Function]}
+                />
+                <NotificationsFooter
+                  onDeleteAll={[Function]}
+                  onDismissAll={[Function]}
+                />
+              </div>
+            </DropdownMenu>
+          </Uncontrolled(Dropdown)>,
+          <ModalComponent
+            bodyMessage=""
+            headerMessage=""
+            onCancel={[Function]}
+            onConfirm={[Function]}
+            showModal={false}
+          />,
+        ],
+        "style": Object {
+          "alignItems": "center",
+          "display": "flex",
+          "minHeight": "90px",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <DropdownToggle
+                bsClass="dropdown-toggle"
+                bsRole="toggle"
+                noCaret={true}
+                open={false}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "border": "none",
+                    "boxShadow": "none",
+                    "marginRight": "-15px",
+                  }
+                }
+                useAnchor={false}
+              >
+                <img
+                  alt="Notifications"
+                  height="40"
+                  src="test-file-stub"
+                  width="40"
+                />
+              </DropdownToggle>,
+              <DropdownMenu
+                bsClass="dropdown-menu"
+                bsRole="menu"
+                className="dropdown-menu animated bounceInDown"
+                pullRight={false}
+                style={
+                  Object {
+                    "borderRadius": "5px",
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <div>
+                  <NotificationsHeader
+                    count={0}
+                  />
+                  <NotificationsList
+                    notifications={Array []}
+                    onDelete={[Function]}
+                    onDismiss={[Function]}
+                    onNotifClick={[Function]}
+                  />
+                  <NotificationsFooter
+                    onDeleteAll={[Function]}
+                    onDismissAll={[Function]}
+                  />
+                </div>
+              </DropdownMenu>,
+            ],
+            "id": "dropdown-custom-1",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "dropdown-toggle",
+                "bsRole": "toggle",
+                "children": Array [
+                  <img
+                    alt="Notifications"
+                    height="40"
+                    src="test-file-stub"
+                    width="40"
+                  />,
+                  false,
+                ],
+                "noCaret": true,
+                "open": false,
+                "style": Object {
+                  "backgroundColor": "transparent",
+                  "border": "none",
+                  "boxShadow": "none",
+                  "marginRight": "-15px",
+                },
+                "useAnchor": false,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Notifications",
+                    "height": "40",
+                    "src": "test-file-stub",
+                    "width": "40",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                false,
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "dropdown-menu",
+                "bsRole": "menu",
+                "children": <div>
+                  <NotificationsHeader
+                    count={0}
+                  />
+                  <NotificationsList
+                    notifications={Array []}
+                    onDelete={[Function]}
+                    onDismiss={[Function]}
+                    onNotifClick={[Function]}
+                  />
+                  <NotificationsFooter
+                    onDeleteAll={[Function]}
+                    onDismissAll={[Function]}
+                  />
+                </div>,
+                "className": "dropdown-menu animated bounceInDown",
+                "pullRight": false,
+                "style": Object {
+                  "borderRadius": "5px",
+                  "overflow": "hidden",
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <NotificationsHeader
+                      count={0}
+                    />,
+                    <NotificationsList
+                      notifications={Array []}
+                      onDelete={[Function]}
+                      onDismiss={[Function]}
+                      onNotifClick={[Function]}
+                    />,
+                    <NotificationsFooter
+                      onDeleteAll={[Function]}
+                      onDismissAll={[Function]}
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": null,
+                    "nodeType": "function",
+                    "props": Object {
+                      "count": 0,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": null,
+                    "nodeType": "function",
+                    "props": Object {
+                      "notifications": Array [],
+                      "onDelete": [Function],
+                      "onDismiss": [Function],
+                      "onNotifClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": null,
+                    "nodeType": "function",
+                    "props": Object {
+                      "onDeleteAll": [Function],
+                      "onDismissAll": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "function",
+          "props": Object {
+            "bodyMessage": "",
+            "headerMessage": "",
+            "onCancel": [Function],
+            "onConfirm": [Function],
+            "showModal": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;

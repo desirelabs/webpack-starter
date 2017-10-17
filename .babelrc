@@ -21,6 +21,7 @@
   },
   "plugins": [
     "syntax-dynamic-import",
+    "transform-decorators-legacy",
     "transform-flow-comments",
     "transform-class-properties",
     "transform-object-rest-spread"
