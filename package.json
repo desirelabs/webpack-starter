@@ -6,7 +6,7 @@
   "scripts": {
     "flow-typed": "flow-typed",
     "watch": "NODE_ENV=dev webpack --config webpack.dev.js --progress --watch",
-    "start": "NODE_ENV=dev webpack-dev-server",
+    "start": "NODE_ENV=dev webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "jest --watch --coverage --expand"
   },
