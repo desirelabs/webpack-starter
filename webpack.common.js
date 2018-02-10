@@ -33,7 +33,7 @@ module.exports = {
   entry: {
     app: [
       './assets/css/app.scss',
-      './assets/js/app.js'
+      './assets/js/index.js'
     ]
   },
   output: {
